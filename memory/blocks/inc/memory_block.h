@@ -6,16 +6,14 @@
 #define GBC_EMU_MEMORY_BLOCK_H
 
 #include <memory>
+#include <vector>
+#include "../../../cpu/inc/data_types.h"
 
-struct Word{
-    std::byte low_address;
-    std::byte high_address;
-};
 
 class MemoryBlock{
 protected:
     Word start_address;
-    std::shared_ptr<Word> block;
+    std::shared_ptr<std::vector<Word>> block;
 
     void write_data(const Word address, Word&& value);
     const Word read_data(const Word address);
