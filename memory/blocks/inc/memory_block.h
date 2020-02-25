@@ -14,10 +14,12 @@ class MemoryBlock{
 protected:
     Word start_address;
     std::shared_ptr<std::vector<Word>> block;
+    size_t size;
 
     void write_data(const Word address, Word&& value);
     const Word read_data(const Word address);
     void erase();
+    size_t get_size();
 
 };
 #endif //GBC_EMU_MEMORY_BLOCK_H
