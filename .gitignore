@@ -1,0 +1,5 @@
+# Default ignored files
+/workspace.xml
+/cmake-build-debug-vs
+/cmake-build-release-vs
+.idea/

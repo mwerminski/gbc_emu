@@ -12,11 +12,12 @@
 #define CARTRIDGE_MAX_SIZE 0x200000
 
 class Cartridge{
-    std::unique_ptr<std::vector<std::byte>> buffer;
-
-    bool load_rom(std::string const& path);
-    void clean_buffer();
-    std::unique_ptr<std::vector<std::byte>> get_buffer();
+protected:
+    std::shared_ptr<std::vector<std::byte>> buffer;
+public:
+    virtual bool load_rom(std::string const& path) = 0;
+    virtual void clean_buffer();
+    virtual std::shared_ptr<std::vector<std::byte>> get_buffer();
 
 };
 
