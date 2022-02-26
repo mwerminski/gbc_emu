@@ -1,5 +1,5 @@
 //
-// Created by root on 2/20/20.
+// Created by szylkret on 2/20/20.
 //
 
 #ifndef GBC_EMU_MAP_H

@@ -1,5 +1,5 @@
 //
-// Created by root on 2/23/20.
+// Created by szylkret on 2/23/20.
 //
 
 #ifndef GBC_EMU_GB_MEM_BLOCK_SIZES_H
