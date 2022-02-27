@@ -1,5 +1,5 @@
 //
-// Created by Mariusz on 21.02.2022.
+// Created by szylkret on 21.02.2022.
 //
 #include <string>
 #include <stdexcept>
@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <memory>
+#include <cstring>
 
 Rom::Rom() = default;
 

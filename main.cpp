@@ -1,8 +1,7 @@
 #include <iostream>
-#include "file_handler/cartridges/inc/rom_only.h"
+#include <spdlog/spdlog.h>
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::cout << "Read files" << std::endl;
+    spdlog::info("Hello, world!\n");
 
     return 0;
 }

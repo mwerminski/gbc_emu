@@ -1,0 +1,5 @@
+[requires]
+spdlog/1.9.2
+nlohmann_json/3.10.5
+[generators]
+cmake_find_package

@@ -1,5 +1,5 @@
 //
-// Created by Mariusz on 21.02.2022.
+// Created by szylkret on 21.02.2022.
 //
 #include "cartridge.h"
 
