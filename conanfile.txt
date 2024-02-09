@@ -1,6 +1,7 @@
 [requires]
 spdlog/1.12.0
 nlohmann_json/3.10.5
+gtest/1.14.0
 
 [generators]
 CMakeDeps
