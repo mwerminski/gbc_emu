@@ -15,9 +15,9 @@ class Cartridge{
 protected:
     std::shared_ptr<std::vector<std::byte>> buffer;
 public:
-    virtual bool load_rom(std::string const& path) = 0;
-    virtual void clean_buffer();
-    virtual std::shared_ptr<std::vector<std::byte>> get_buffer();
+    bool load_rom(std::string const& path);
+    void clean_buffer();
+    std::shared_ptr<std::vector<std::byte>> get_buffer();
 
 };
 
