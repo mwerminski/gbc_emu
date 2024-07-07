@@ -6,11 +6,10 @@
 #define GBC_EMU_REGISTER_H
 
 #include <iostream>
+#include "data_types.h"
 
-class Register{
+class Register : public Word {
     const std::string name;
-    std::byte low_bits;
-    std::byte high_bits;
 
 public:
     Register() = delete;
@@ -19,7 +18,7 @@ public:
     Register(std::string name);
     Register& operator=(const Register reg) = delete;
     Register& operator=(Register&& reg);
-    ~Register();
+    ~Register() = default;
 
 };
 #endif //GBC_EMU_REGISTER_H
